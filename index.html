@@ -236,7 +236,11 @@
 	  .elementor-location-header .elementor-element-d3a5159 .elementor-nav-menu--main {
 	    display: none !important;
 	  }
-	  .elementor-location-header .elementor-element-d3a5159 .elementor-nav-menu--dropdown {
+	  .elementor-location-header .elementor-element-d3a5159 nav.elementor-nav-menu--dropdown {
+	    display: none;
+	  }
+	  .elementor-location-header .elementor-element-d3a5159 .elementor-menu-toggle.elementor-active + nav.elementor-nav-menu--dropdown,
+	  .elementor-location-header .elementor-element-d3a5159 .elementor-menu-toggle[aria-expanded="true"] + nav.elementor-nav-menu--dropdown {
 	    display: block;
 	  }
 	}
@@ -582,19 +586,43 @@
 	}
 	@media (max-width: 767px) {
 	  .elementor-location-header .elementor-section.sticky-header > .elementor-container {
-	    display: grid !important;
-	    grid-template-columns: minmax(0, 1fr) auto !important;
+	    display: flex !important;
 	    align-items: center !important;
+	    justify-content: space-between !important;
+	    flex-wrap: nowrap !important;
+	  }
+	  .elementor-location-header .elementor-element-ac03a15 {
+	    width: auto !important;
+	    flex: 0 0 auto !important;
+	  }
+	  .elementor-location-header .elementor-element-3f5a881 {
+	    width: auto !important;
+	    flex: 1 1 auto !important;
+	    min-width: 0 !important;
+	  }
+	  .elementor-location-header .elementor-element-3f5a881 > .elementor-widget-wrap {
+	    display: flex !important;
+	    align-items: center !important;
+	    justify-content: flex-end !important;
+	  }
+	  .elementor-location-header .elementor-element-c6d849f > .elementor-container {
+	    display: flex !important;
+	    align-items: center !important;
+	    justify-content: flex-end !important;
+	    flex-wrap: nowrap !important;
+	    gap: 0.35rem !important;
 	  }
 	  .elementor-location-header .elementor-element-d68cf08,
 	  .elementor-location-header .she-header .elementor-element-d68cf08 {
-	    min-width: 7.2rem !important;
-	    width: 7.2rem !important;
-	    max-width: 7.2rem !important;
+	    min-width: auto !important;
+	    width: auto !important;
+	    max-width: none !important;
+	    flex: 0 0 auto !important;
 	  }
 	  .elementor-location-header .elementor-element-d3a5159,
 	  .elementor-location-header .she-header .elementor-element-d3a5159 {
 	    min-width: 0 !important;
+	    flex: 0 0 auto !important;
 	  }
 	  .elementor-location-header .elementor-element-d68cf08 > .elementor-widget-wrap,
 	  .elementor-location-header .she-header .elementor-element-d68cf08 > .elementor-widget-wrap {
@@ -1957,31 +1985,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 <div class="elementor-main-swiper swiper" role="region" aria-roledescription="carousel" aria-label="Slides">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/08/etihad.png" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="etihad" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/08/etihad.png" class="elementor-carousel-image" role="img" aria-label="etihad" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/08/etihad.png');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/total-scaled.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="total" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/total-scaled.jpg" class="elementor-carousel-image" role="img" aria-label="total" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/10/total-scaled.jpg');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-8.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="Abu Dhabi Ports" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-8.jpg" class="elementor-carousel-image" role="img" aria-label="Abu Dhabi Ports" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-8.jpg');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/depcul-scaled.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="depcul" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/depcul-scaled.jpg" class="elementor-carousel-image" role="img" aria-label="depcul" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/10/depcul-scaled.jpg');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/FANR.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="FANR" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/10/FANR.jpg" class="elementor-carousel-image" role="img" aria-label="FANR" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/10/FANR.jpg');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="Sharjah Ladies Club" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template.jpg" class="elementor-carousel-image" role="img" aria-label="Sharjah Ladies Club" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template.jpg');">
                                                             </div>
                                                         </div>
                                                         <div class="swiper-slide" role="group" aria-roledescription="slide">
-                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-5.jpg" class="elementor-carousel-image rocket-lazyload" role="img" aria-label="Chalhoub Group" style="">
+                                                            <div data-bg="https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-5.jpg" class="elementor-carousel-image" role="img" aria-label="Chalhoub Group" style="background-image: url('https://selecttraining.ae/wp-content/uploads/2022/11/Copy-of-Company-Logos-Template-5.jpg');">
                                                             </div>
                                                         </div>
                                                     </div>
